@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/raise_hand"
+    android:orientation="vertical"
+    android:gravity="bottom|center"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#ff22"
+        android:progressTint="#130DC5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:gravity="bottom"
+        android:text="Welcome to জিজ্ঞাসা "
+        android:textColor="#48934B"
+        android:textSize="30sp"
+        android:layout_marginRight="600sp"
+
+        android:textStyle="italic" />
+
+</LinearLayout>

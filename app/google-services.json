@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "54889857591",
+    "project_id": "question-f8bc6",
+    "storage_bucket": "question-f8bc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54889857591:android:47e2636ca09b77543db5b2",
+        "android_client_info": {
+          "package_name": "com.example.question"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54889857591-sgurc4l02bmrrahnqp1dh7vo2kqpu7uh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.question",
+            "certificate_hash": "68840c162c21d549cf5fad56713b463981fd76ab"
+          }
+        },
+        {
+          "client_id": "54889857591-7rbtg96ij2nj755jpkbd2o3usnns6gvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL6VSEasE_jY0OZ4kSfBCldPbjNwX1ZUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54889857591-7rbtg96ij2nj755jpkbd2o3usnns6gvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

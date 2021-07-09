@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">question</string>
+    <string name="navigation_drawer_open">Opening navigation drawrer</string>
+    <string name="navigation_drawer_close">Closing navigation drawrer</string>
+    <string-array name="topics">
+        <item>select a topic</item>
+        <item>Science</item>
+        <item>sports</item>
+        <item>food</item>
+    </string-array>
+</resources>

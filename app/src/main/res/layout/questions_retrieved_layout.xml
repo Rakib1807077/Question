@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    app:cardBackgroundColor="#DFDED2"
+    android:layout_margin="10dp">
+
+   <!-- Ekhane nijer nam,image aro kisu jinish dekhabe-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/publisher_profile_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/asked_by_Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/publisher_profile_image"
+                android:gravity="center"
+                android:text="Text we got from Database"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="11dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/asked_by_Textview"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+        </RelativeLayout>
+
+        <!--Ekhane topic,topic r nam and date dekhabe-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Topic : " />
+
+            <TextView
+                android:id="@+id/topicTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Topic Name"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/askedOnTextView"
+                android:layout_weight="1"
+                android:text="22june,2021"
+                android:textColor="#ff22"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+
+        </LinearLayout>
+<!--        facebook e jemon 3 line porjonto pore expend kora jay.eknew temon koresi
+        .jehetu image add kortew pari abar naw korte pari.tay visibility gone kore disi.-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ms.square.android.expandabletextview.ExpandableTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expand_text_view"
+                app:maxCollapsedLines="3"
+                app:animDuration="200">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expandable_text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16dp"
+                    android:text="TextView"
+                    android:layout_margin="2dp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expand_collapse"
+                    android:padding="16dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="@android:color/transparent"/>
+
+            </com.ms.square.android.expandabletextview.ExpandableTextView>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_baseline_image_24"
+                android:layout_gravity="center"
+                android:id="@+id/questionImage1"
+                android:visibility="gone"
+                />
+
+            <!-- Creating ActionBar for Upvote, downVote,Comment,reply-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/upvote"
+                    android:src="@drawable/ic_upvote"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/downvote"
+                    android:src="@drawable/ic_downvote"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/comment"
+                    android:src="@drawable/ic_baseline_comment_24"/>
+
+
+            </LinearLayout>
+           <!-- porer layout ta korbo number of comment,no of like r number of dislike korar jonno-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="upvotes"
+                    android:id="@+id/upvotes"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="downvotes"
+                    android:id="@+id/downvotes"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="View all comments"
+                    android:padding="20dp"
+                    android:gravity="center"
+                    android:id="@+id/comments"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
